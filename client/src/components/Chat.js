@@ -24,7 +24,7 @@ const Chat = ({ location }) => {
 	recognition.interimResults = true;
 	recognition.lang = 'en-US';
 
-	const endpoint = 'localhost:5000';
+	const endpoint = 'https://socketio-app-react.herokuapp.com/';
 	const [room, setRoom] = useState('');
 	const [rooms, setRooms] = useState([
 		'server 1',
